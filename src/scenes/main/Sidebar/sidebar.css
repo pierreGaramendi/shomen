@@ -1,0 +1,92 @@
+.list-box {
+     background: #212121;
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 250px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* .list-box:hover {
+    width: 250px;
+    overflow: visible;
+} */
+
+.list {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    color: white;
+    list-style-position: inside;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+.item:first-child{
+    margin-top: 0.5rem;
+}
+.icon {
+    margin-right: 1rem;
+}
+.item-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+.nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+}
+.item-link:hover {
+    color: #fff;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+
+
+
+.sublist {
+    list-style-type: none;
+    padding: 0px;
+    border-radius: 10px;
+}
+.subitem {
+    align-items: center;
+}
+.subitem-link {
+    margin-left: 4rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+    text-decoration:none;
+    
+}
+.subitem:hover {
+    color: #fff;
+    background-color: #141414;
+    border-radius: 10px;
+}
+
+.divider{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+	height: 1px;
+    width: 100%;
+    background-color:rgba(154, 158, 163, 0.398) ;
+    border-radius: 10px;
+    align-self: center;
+}

@@ -1,12 +1,13 @@
-import { useState } from 'react'
 import { MySidebar } from './scenes/main/Sidebar/sidebar'
 import { Topbar } from './scenes/main/topbar'
 import { ColorModeContext, useMode } from './theme'
 import { CssBaseline, ThemeProvider } from '@mui/material'
-import { Menu } from './scenes/main/Sidebar/sidebar-data'
+import { Menu } from './scenes/main/Sidebar/data/sidebar-data'
+import { useState } from 'react'
+import { ShowWithAnimation } from './components/Animation/ShowWithAnimation'
 export const App = () => {
   const [theme, colorMode] = useMode();
-  const [isSidebar, setIsSidebar] = useState(true);
+  const [isMounted, setIsMounted] = useState(false);
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
@@ -14,10 +15,13 @@ export const App = () => {
         <div className="app">
           <MySidebar menu={Menu} />
           <main className="content">
-            sdfsdfsdf
-            <ul>
-              <li><a href="">test</a></li>
-            </ul>
+            <Topbar></Topbar>
+            <div>
+              <button onClick={()=>{setIsMounted(!isMounted)}}>OKKKKKKKKKKKKK</button>
+            <ShowWithAnimation isMounted={isMounted}>
+              test
+            </ShowWithAnimation>
+            </div>
           </main>
         </div>
       </ThemeProvider>

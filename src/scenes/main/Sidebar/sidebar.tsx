@@ -1,6 +1,6 @@
 import './sidebar.css'
-import { Item } from './components/Item'
-import { ISideMenuList } from './sidebar-types'
+import { ISideMenuList } from './types/sidebar-types'
+import { Item } from './components/item'
 type SidebarProps = {
     menu: ISideMenuList
 }
@@ -8,16 +8,16 @@ export const MySidebar = (props: SidebarProps) => {
     const { menu } = props;
     return (
         <nav className="list-box">
-            <ul className='list'>
+            <div className='list'>
                 {
                     menu.map((item, index) => {
                         return (
-                            <Item item={item} key={index}></Item>
+                            <Item item={item} key={index} />
                         );
                     })
                 }
 
-            </ul>
+            </div>
         </nav>
     );
 }

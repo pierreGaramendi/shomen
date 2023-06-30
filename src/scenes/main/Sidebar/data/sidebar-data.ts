@@ -1,4 +1,4 @@
-import { ISideMenuList } from "./sidebar-types";
+import { ISideMenuList } from "../types/sidebar-types";
 
 export const Menu: ISideMenuList = [
     {

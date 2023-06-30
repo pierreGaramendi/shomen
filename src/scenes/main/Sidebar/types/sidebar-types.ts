@@ -12,3 +12,8 @@ export interface ISubitem {
   title: string
   icon?: string
 }
+
+
+export type IItemProps = {
+  item: IItem
+}

@@ -7,7 +7,7 @@ type SidebarProps = {
 export const MySidebar = (props: SidebarProps) => {
     const { menu } = props;
     return (
-        <nav className="list-box">
+        <nav className="list-box bg-white border-gray-200 dark:bg-gray-900">
             <div className='list'>
                 {
                     menu.map((item, index) => {

@@ -6,6 +6,7 @@ export interface IItem {
   hasSubitems: boolean
   icon: string
   subitems: ISubitem[]
+  path: string
 }
 
 export interface ISubitem {

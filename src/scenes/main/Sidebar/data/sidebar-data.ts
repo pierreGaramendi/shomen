@@ -6,7 +6,8 @@ export const Menu: ISideMenuList = [
         open: false,
         hasSubitems: false,
         subitems: [],
-        icon: 'menu'
+        icon: 'menu',
+        path: '/'
     },
     {
         title: 'Dashboard',
@@ -17,82 +18,15 @@ export const Menu: ISideMenuList = [
             { title: 'Sub item 2' },
             { title: 'Sub item 3' },
         ],
-        icon: 'account_balance'
+        icon: 'account_balance',
+        path: 'dashboard'
     },
     {
         title: 'Productos',
         open: false,
         hasSubitems: false,
         subitems: [],
-        icon: 'emoji_events'
-    },
-    {
-        title: 'Usuarios',
-        open: false,
-        hasSubitems: true,
-        subitems: [
-            { title: 'Admins' },
-            { title: 'Personas' },
-            { title: 'Escalvos' },
-        ],
-        icon: 'festival'
-    },
-    {
-        title: 'Dashboard',
-        open: false,
-        hasSubitems: true,
-        subitems: [
-            { title: 'Persona' },
-            { title: 'Sub item 2' },
-            { title: 'Sub item 3' },
-        ],
-        icon: 'adjust'
-    },
-    {
-        title: 'Productos',
-        open: false,
-        hasSubitems: false,
-        subitems: [],
-        icon: 'album'
-    },
-    {
-        title: 'Usuarios',
-        open: false,
-        hasSubitems: true,
-        subitems: [
-            { title: 'Admins' },
-            { title: 'Personas' },
-            { title: 'Escalvos' },
-        ],
-        icon: 'back_hand'
-    },
-    {
-        title: 'Dashboard',
-        open: false,
-        hasSubitems: true,
-        subitems: [
-            { title: 'Persona' },
-            { title: 'Sub item 2' },
-            { title: 'Sub item 3' },
-        ],
-        icon: 'emoji_emotions'
-    },
-    {
-        title: 'Productos',
-        open: false,
-        hasSubitems: false,
-        subitems: [],
-        icon: 'favorite'
-    },
-    {
-        title: 'Usuarios',
-        open: false,
-        hasSubitems: true,
-        subitems: [
-            { title: 'Admins' },
-            { title: 'Personas' },
-            { title: 'Escalvos' },
-        ],
-        icon: 'flag_circle'
-    },
+        icon: 'emoji_events',
+        path: 'productos'
+    }
 ]

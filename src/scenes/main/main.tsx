@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom"
 export const Main = () => {
     return (
         <div className="flex flex-row h-full">
-            <MySidebar menu={Menu} />
+           {/*  <MySidebar menu={Menu} /> */}
             <main className="content">
                 <Topbar />
                 <div className="content-render">

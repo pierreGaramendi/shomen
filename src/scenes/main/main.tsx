@@ -7,9 +7,9 @@ export const Main = () => {
     return (
         <div className="flex flex-row h-full">
            {/*  <MySidebar menu={Menu} /> */}
-            <main className="content">
+            <main className="content h-full">
                 <Topbar />
-                <div className="content-render">
+                <div className="content-render h-full">
                     <Outlet />
                 </div>
             </main>

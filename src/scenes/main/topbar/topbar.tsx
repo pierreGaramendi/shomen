@@ -5,8 +5,8 @@ import { TopbarConfig } from './config/config';
 
 export const Topbar = () => {
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="flex flex-wrap items-center justify-between p-4">
+    <header className="bg-white border-gray-200 dark:bg-gray-900">
+      <div className="flex flex-wrap items-center justify-between p-4 lg:mx-20">
         <Logo></Logo>
         <div id="mega-menu-full" className="items-center justify-between font-medium hidden w-full md:flex md:w-auto md:order-2">
           <TopbarMenu></TopbarMenu>
@@ -18,6 +18,6 @@ export const Topbar = () => {
           <TopbarConfig></TopbarConfig>
         </div>
       </div>
-    </nav>
+    </header>
   );
 };

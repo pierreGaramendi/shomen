@@ -10,7 +10,8 @@ body,
   width: 100%;
   height: 100%;
   font-family: 'Inter', sans-serif, cursive;
-  background-color: #151521;
+  /* background-color: #151521; */
+  background-color: black;
 }
 
 

@@ -1,0 +1,7 @@
+.notification-alert-counter{
+    @apply absolute text-sm inline-flex w-5 h-5 bg-red-600 border-white rounded-full -top-1 left-3 dark:border-gray-900
+}
+
+.notification-list{
+    @apply z-20 right-11 absolute w-full max-w-sm bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-800 dark:divide-gray-700
+}

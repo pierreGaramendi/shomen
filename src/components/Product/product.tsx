@@ -3,6 +3,7 @@ import { productosResult } from './data/products-datalist';
 import { SearchFilters } from './filters';
 import { ProductItem } from './product-item';
 import { useSearchParams } from 'react-router-dom';
+import { Select } from '@mantine/core';
 
 export const Product = () => {
     const [searchParams] = useSearchParams();
@@ -24,7 +25,15 @@ export const Product = () => {
                     </div>
                     <div className='flex flex-row items-center'>
                         <div className='text-sm text-gray-900 dark:text-white mr-2'>Ordenar por: </div>
-                        <Dropdown />
+                        {/* <Dropdown /> */}
+                        <Select
+                            placeholder="Pick one"
+                            data={[
+                                { value: 'react', label: 'Menor Precio' },
+                                { value: 'ng', label: 'Mayor Precio' },
+                                { value: 'svelte', label: 'Mas Relevantes' }
+                            ]}
+                        />
                     </div>
                 </div>
                 <div className='grid grid-cols-4 gap-4'>

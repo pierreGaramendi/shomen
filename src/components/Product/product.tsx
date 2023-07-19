@@ -2,10 +2,14 @@ import { Dropdown } from '../dropdown/dropdown';
 import { productosResult } from './data/products-datalist';
 import { SearchFilters } from './filters';
 import { ProductItem } from './product-item';
+import { useSearchParams } from 'react-router-dom';
 
 export const Product = () => {
+    const [searchParams] = useSearchParams();
+    console.log(searchParams.get('search')); // 'name'
+
     const title: string = 'Resultados para'
-    const searchValue = ' "laptop" '
+    const searchValue = ` ${searchParams.get('search')} `
     const resultsQuantity = '(1000+)'
     return (
         <div className="p-5 lg:mx-20 mt-5 flex flex-row">

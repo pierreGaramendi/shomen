@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base; */
 @tailwind components;
 @tailwind utilities;
 
@@ -12,8 +12,23 @@ body,
   font-family: 'Inter', sans-serif, cursive;
   /* background-color: #151521; */
   background-color: black;
+  padding: 0;
+  margin: 0;
 }
 
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme('borderColor.DEFAULT', currentColor);
+}
 
 @keyframes inAnimation {
   0% {

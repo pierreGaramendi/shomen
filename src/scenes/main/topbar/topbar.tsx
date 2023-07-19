@@ -2,6 +2,8 @@ import { Autocomplete } from './autocomplete/autocomplete';
 import { Logo } from './logo/logo';
 import { TopbarMenu } from './menu/menu';
 import { TopbarConfig } from './config/config';
+import { Demo } from './autocomplete2/autocomplete2';
+
 
 export const Topbar = () => {
   return (
@@ -12,7 +14,8 @@ export const Topbar = () => {
           <TopbarMenu></TopbarMenu>
         </div>
         <div className="w-full max-w-xs order-3">
-          <Autocomplete></Autocomplete>
+         {/*  <Autocomplete></Autocomplete> */}
+          <Demo></Demo>
         </div>
         <div className="flex items-center md:order-4">
           <TopbarConfig></TopbarConfig>

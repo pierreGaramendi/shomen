@@ -1,4 +1,3 @@
-import Icon from '@mui/material/Icon';
 import avatar from '../../../../../assets/avatar.svg'
 import './notification.css'
 import useComponentVisible from '../../../../../hooks/useComponentVisible';
@@ -10,7 +9,7 @@ export const Notifications = () => {
     return (
         <div className='' ref={ref}>
             <button onClick={handleClickAvatar} className="flex items-center font-medium text-center text-gray-500 hover:text-gray-900 focus:outline-none dark:hover:text-white dark:text-gray-400 relative" type="button">
-                <Icon className='cursor-pointer text-white'>notifications</Icon>
+               {/*  <Icon className='cursor-pointer text-white'>notifications</Icon> */}
                 <div className="notification-alert-counter">+9</div>
             </button>
             <div id="dropdownNotification" className={`notification-list ${(isComponentVisible) ? "block" : "hidden"}`}aria-labelledby="dropdownNotificationButton">

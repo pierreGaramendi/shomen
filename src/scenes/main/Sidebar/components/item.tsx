@@ -1,6 +1,5 @@
 import { ShowWithAnimation } from '../../../../components/Animation/ShowWithAnimation';
 import { KeyboardArrowUp, KeyboardArrowDown } from '@mui/icons-material';
-import Icon from '@mui/material/Icon';
 import { Subitem } from './subitem';
 import { IItemProps } from '../types/sidebar-types';
 import { useState } from 'react';
@@ -18,7 +17,7 @@ export const Item = (props: IItemProps) => {
     return (
         <div className="item">
             <div className='item-link' onClick={() => handleNavigation(item.path)}>
-                <Icon className='icon'>{item.icon}</Icon>
+                {/* <Icon className='icon'>{item.icon}</Icon> */}
                 <span className="nav-text">{item.title}</span>
                 <KeyboardArrowUp />
             </div>
